@@ -1,0 +1,283 @@
+
+单选题：
+
+
+4、遍历所有的span元素并选出含有title属性的那一个。：
+
+  正确答案：D
+
+A  $("span:title")
+
+B  $("span:[title]")
+
+C  $("span").title
+
+D  $("span[title]")   //属性用[]
+
+5、以下哪句代码可以使DIV元素隐藏后再更改字体颜色？：
+
+  正确答案：A
+
+A  $("div").hide(300,function(){$("div").css("color","red")})  //这里的function就叫回调函数
+
+B  $("div").hide(function(){$("div").css("color","red")},300)
+
+C  $("div").hide(function(){$("div").css("color","red")})
+
+D  $("div").hide=function(){$("div").css("color","red")}
+
+6、关于Toggle（）和show（）的区别：
+
+  正确答案：A
+
+A  show()只能控制显示，Toggle（）可以切换显示或隐藏
+
+B  没有区别
+
+C  show()可以直接显示元素，Toggle（）只能用户隐藏元素
+
+D  show()可以控制动画时间，Toggle（）不可以
+
+7、文本框获取焦点时更改样式的操作正确的是？：
+
+  正确答案：D
+
+A  $(":input").focus(function(){this.addClass(".active")})
+
+B  $(":input").blur(function(){$(this).addClass(".active")})  //失去焦点
+
+C  $(":input").onfocus(function(){$(this).addClass(".active")})
+
+D  $(":input").focus(function(){$(this).addClass(".active")})
+
+8、当元素有class样式时取消，没有时添加class样式可以通过（）方法实现？：
+
+  正确答案：C
+
+A  removeClass()
+
+B  triggerClass()
+
+C  toggleClass()
+
+D  addClass()
+
+9、如果想用attr修改元素多个属性，以下书写正确的是。：
+
+  正确答案：D
+
+A  $("img").attr("src"="test.jpg","alt"="test");
+
+B  $("img").attr("src","test.jpg","alt","test");
+
+C  $("img").attr()="src:test.jpg,alt:test"
+
+D  $("img").attr({ src: "test.jpg", alt: "Test Image" });
+
+3、获取第一个form元素的方法有？：
+						 
+
+正确答案：A ; B ; C
+
+A $("form:first")
+
+B $("form:eq(0)")
+
+C $("form").eq(0)
+
+D $("form")
+
+5、以下属于animate（）函数参数的是：
+						 
+
+正确答案：A ; B ; C
+
+A 回调函数
+
+B 动画执行速度
+
+C css属性对象
+
+D 停止动画
+
+
+7、哪些方法可以用来删除节点：
+						 
+
+正确答案：B ; C ; D
+
+A clone()   //复制
+
+B empty（）  //清空
+
+C replaceAll()  //后面的元素替换前面的元素
+
+D remove()  //删除
+
+9、以下哪些选择器是表单对象属性过滤选择器？：
+						 
+
+正确答案：A ; B ; D
+
+A :selected
+
+B :checked
+
+C :hidden  //可见性过滤选择器，隐藏
+
+D :disabled
+
+
+2、$(&quot;.one + div&quot;)选取class为one元素的后一个div兄弟元素。：：
+
+正确答案：对	
+
+
+4、可以使用jQuery的工厂函数$()来创建元素节点：：
+
+正确答案：对	
+
+
+5、通过$(&quot;div:visible&quot;)可以遍历出所有可见div元素：：
+
+正确答案：对	
+
+
+6、理论上find()的执行速度比children()慢：：//find是查找所有符合条件的后代，children是查找符合条件的子代
+
+正确答案：对	
+
+
+9、$(&quot;button&quot;).bind(&quot;mouseover&quot;,function)与$(&quot;button&quot;).on(&quot;mouseover&quot;,function)实现的效果一样：：
+
+正确答案：对	
+
+10、$(&quot;input:disabled&quot;).val(&quot;你被禁用了吗？&quot;)该语句的作用是选取被禁用的input元素，并设置其value为&quot;你被禁用了吗？&quot;。：：
+
+正确答案：对	
+
+2、让一个class名为&quot;test&quot;的元素以600毫秒的速度折叠隐藏，通过以下哪个方法可以实现？：
+
+  正确答案：C
+
+A  $("test").fadeOut(600)
+
+B  $("test").fadeIn(600)
+
+C  $("test").slideUp(600)
+
+4、删除下拉列表中选中项的操作正确的是？：
+
+  正确答案：A
+
+A  $("select option:selected").remove()
+
+
+5、以下给div添加class的方法正确的是：
+
+  正确答案：A
+
+A  $("div").addClass("cl")
+
+B  $("div").hasClass("cl")
+
+C  $("div").css("cl")
+
+D  $("div").removeClass("cl")
+
+6、找到每个span的所有是p元素的祖先元素，写法正确的是？：
+
+  正确答案：B
+
+A  $("span").parent("p")
+
+B  $("span").parents("p")
+
+C  $("span").parents()
+
+D  $("span").closest("p")
+
+7、已知代码var $a=$(&quot;#a1&quot;),$b=$(&quot;#b1&quot;),$c=$(&quot;#c1&quot;);如果想将$c插入到$a的前面，以下代码正确的是。：
+
+  正确答案：D
+
+A  $c.before($a);  //a插入到c的前面
+
+B  $c.appendTo($a);  //c插入到a的后面
+
+C  $a.prependTo($c);  //a插入到c的前面
+
+D  $a.before($c);   //c插入到a的前面
+
+8、想要获取到img元素的alt属性值，可以通过以下哪个操作完成？：
+
+  正确答案：C
+
+A  $("img").attr();
+
+B  $("img").get("alt");
+
+C  $("img").attr("alt");
+
+D  $("img").getAtt("alt");
+
+9、要删除P元素的title属性，以下描述正确的是？：
+
+  正确答案：D
+
+A  $("p").attr("title")
+
+B  $("p").attr("title","")
+
+C  $("p").remove("title")
+
+D  $("p").removeAttr("title")
+
+11、查找id名为“son”的span元素并复制，然后将它添加到id名为&quot;father&quot;的元素中，操作正确的是？：
+
+  正确答案：C
+
+A  $("#son").cloneNode().appendTo("#father")
+
+B  $("#son").clone().appendTo($"#father")
+
+C  $("#son").clone().appendTo("#father")
+
+D  $("#son").cloneNode().appendTo($"#father")
+
+12、获取div元素后的id名为&quot;tip&quot;的兄弟元素：
+
+  正确答案：C
+
+A  $("div").siblings("#tip")
+
+B  $("div").next("#tip")
+
+C  $("div").nextAll("#tip")
+
+D  $("div").nextUntil("#tip")
+
+13、下面哪一种不属于Jquery的选择器。：
+
+  正确答案：A
+
+A  节点选择器
+
+B  层次选择器
+
+C  基本选择器
+
+D  表单选择器
+
+
+15、在jquery中想要找到所有元素的同辈元素，下面哪一个是可以实现的？：
+
+  正确答案：A
+
+A  siblings([expr])
+
+B  eq(index)
+
+C  find(expr)
+
+D  nextAll()
